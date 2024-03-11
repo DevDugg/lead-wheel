@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { DM_Sans } from "next/font/google";
-import Logo from "@/components/ui/Logo";
+import Logo from "@/components/elements/Logo";
 import type { Metadata } from "next";
 
 const dm = DM_Sans({ subsets: ["latin"] });

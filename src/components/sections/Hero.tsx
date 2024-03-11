@@ -18,6 +18,7 @@ const Hero = () => {
           <p className="text-[100px] leading-LOW">Your Gateway to Elevate Advertising & CRO Agencies</p>
           <CTA name="Book a call" href="#" />
         </div>
+        <div className="flex items-center justify-between gap-6"></div>
       </Container>
     </section>
   );
