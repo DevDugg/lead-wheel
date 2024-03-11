@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { DM_Sans } from "next/font/google";
-import Logo from "@/components/elements/Logo";
+import Logo from "@/components/elements/logo";
 import type { Metadata } from "next";
 
 const dm = DM_Sans({ subsets: ["latin"] });
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm.className} text-WHITE bg-BLACK`}>
+      <body className={`${dm.className} h-[1000vh] text-WHITE bg-BLACK`}>
         <Logo />
         {children}
       </body>
