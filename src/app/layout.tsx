@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dm.className} text-WHITE bg-BLACK`}>
         <Logo />
+        {children}
       </body>
     </html>
   );

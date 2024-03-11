@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      background: {
+      backgroundImage: {
         GRADIENT_BLUE: "linear-gradient(180deg, rgba(249,250,251,1) 0%, rgba(142,162,187,1) 100%)",
       },
       colors: {
@@ -16,6 +16,10 @@ const config: Config = {
         LIGHTBLACK: "#131313",
         WHITE: "#F5F5F5",
         GRAY: "#5D5D5D",
+      },
+      lineHeight: {
+        LOW: "100%",
+        NORMAL: "120%",
       },
     },
   },
