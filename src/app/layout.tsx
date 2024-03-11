@@ -1,9 +1,10 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+import Logo from "@/components/ui/Logo";
 import type { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
+const dm = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mythical Marketing",
@@ -17,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${dm.className} text-WHITE bg-BLACK`}>
+        <Logo />
+      </body>
     </html>
   );
 }
