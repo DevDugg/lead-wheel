@@ -1,3 +1,4 @@
+import BulletPoints from "../elements/hero/bullet-points";
 import CTA from "../ui/CTA";
 import Container from "../layout/Container";
 import Image from "next/image";
@@ -18,7 +19,7 @@ const Hero = () => {
           <p className="text-[100px] leading-LOW">Your Gateway to Elevate Advertising & CRO Agencies</p>
           <CTA name="Book a call" href="#" />
         </div>
-        <div className="flex items-center justify-between gap-6"></div>
+        <BulletPoints />
       </Container>
     </section>
   );
