@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm.className} h-[1000vh] text-WHITE bg-BLACK`}>
+      <body className={`${dm.className} text-WHITE bg-BLACK`}>
         <Logo />
         {children}
       </body>
