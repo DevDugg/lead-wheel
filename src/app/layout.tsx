@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { DM_Sans } from "next/font/google";
+import Footer from "@/components/sections/Footer";
 import Logo from "@/components/elements/logo";
 import type { Metadata } from "next";
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${dm.className} text-WHITE bg-BLACK`}>
         <Logo />
         {children}
+        <Footer />
       </body>
     </html>
   );

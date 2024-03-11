@@ -2,7 +2,7 @@ import Hero from "@/components/sections/Hero";
 
 const Home = () => {
   return (
-    <main className="home">
+    <main className="home flex flex-col gap-[200px] pb-[200px]">
       <Hero />
     </main>
   );
