@@ -4,6 +4,7 @@ import { DM_Sans } from "next/font/google";
 import Footer from "@/components/sections/Footer";
 import Logo from "@/components/elements/logo";
 import type { Metadata } from "next";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 
 const dm = DM_Sans({ subsets: ["latin"] });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dm.className} text-WHITE bg-BLACK`}>
-        <Logo />
-        {children}
-        <Footer />
+        <SmoothScroll>
+          <Logo />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
