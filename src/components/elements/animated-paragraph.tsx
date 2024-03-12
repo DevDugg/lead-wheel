@@ -15,7 +15,7 @@ const AnimatedParagraph = ({ text }: Props) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 0.9", "start 0.25"],
+    offset: ["start 0.8", "start 0.1"],
   });
   return (
     <h2 ref={ref} className="text-[40px] font-medium leading-NORMAL flex flex-wrap">
