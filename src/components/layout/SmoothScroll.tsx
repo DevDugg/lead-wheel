@@ -9,9 +9,8 @@ function SmoothScroll({ children }: PropsWithChildren) {
     <ReactLenis
       root
       options={{
-        lerp: 3,
+        lerp: 0.1,
         duration: 3,
-        smoothWheel: true,
         easing: (t) => Math.min(1, 1.001 - Math.pow(4, -5 * t)),
         direction: "vertical",
         gestureDirection: "vertical",
