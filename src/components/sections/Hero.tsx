@@ -1,11 +1,11 @@
-import BulletPoints from "../elements/hero/bullet-points";
+import BulletPoints from "../elements/bullet-points";
 import CTA from "../ui/CTA";
-import Container from "../layout/Container";
+import Container from "../layout/container";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="hero relative h-screen pt-32">
+    <section className="hero relative h-screen pt-32" id="hero">
       <Image
         src={"/images/hero_bg.png"}
         alt="Hero BG"
@@ -16,7 +16,7 @@ const Hero = () => {
       />
       <Container className="flex flex-col gap-20">
         <div className="flex flex-col gap-10">
-          <p className="text-[100px] leading-LOW">Your Gateway to Elevate Advertising & CRO Agencies</p>
+          <h1 className="text-[100px] leading-LOW">Your Gateway to Elevate Advertising & CRO Agencies</h1>
           <CTA name="Book a call" href="#" />
         </div>
         <BulletPoints />
