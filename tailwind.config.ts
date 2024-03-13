@@ -31,6 +31,9 @@ const config: Config = {
         BENEFITS: "100fr 62.5fr",
         BENEFITS_REVERSE: "62.5fr 100fr",
       },
+      boxShadow: {
+        FADEIN: "0px -38px 11px 31px rgba(10,10,10,1)",
+      },
     },
   },
   plugins: [],
