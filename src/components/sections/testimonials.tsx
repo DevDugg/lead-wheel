@@ -1,5 +1,6 @@
 import Container from "../layout/container";
 import Testimonial from "../elements/testimonial";
+import Title from "../elements/title";
 
 const testimonials = [
   {
@@ -20,9 +21,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
       <Container className="flex flex-col gap-12">
-        <h2 className="text-gradient font-medium leading-LOW text-TITLE bg-GRADIENT_BLUE text-center">
-          What other clients say about us
-        </h2>
+        <Title value="What other clients say about us" centered />
         <div className="grid grid-cols-3 gap-2">
           {testimonials.map((testimonial, index) => (
             <Testimonial {...testimonial} key={index} />

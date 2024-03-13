@@ -1,5 +1,6 @@
 import Container from "../layout/container";
 import Step from "../elements/step";
+import Title from "../elements/title";
 
 const steps = [
   {
@@ -24,7 +25,7 @@ const Steps = () => {
   return (
     <section className="steps" id="steps">
       <Container className="flex flex-col gap-12">
-        <h2 className="text-gradient bg-GRADIENT_BLUE text-TITLE font-medium leading-LOW">Our Unique Approach</h2>
+        <Title value="Our Unique Approach" />
         <ul className="border-t border-GRAY flex flex-col">
           {steps.map((step, index) => (
             <Step key={index} index={index + 1} title={step.title} description={step.description} />

@@ -24,6 +24,13 @@ const config: Config = {
         LOW: "100%",
         NORMAL: "120%",
       },
+      dropShadow: {
+        BENEFIT: "0px 0px 160px rgba(177, 191, 208, 0.6)",
+      },
+      gridTemplateColumns: {
+        BENEFITS: "100fr 62.5fr",
+        BENEFITS_REVERSE: "62.5fr 100fr",
+      },
     },
   },
   plugins: [],
