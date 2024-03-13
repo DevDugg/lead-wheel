@@ -1,4 +1,5 @@
 import Benefits from "@/components/sections/benefits";
+import CTASection from "@/components/sections/cta";
 import Hero from "@/components/sections/hero";
 import Paragraph from "@/components/sections/paragraph";
 import Steps from "@/components/sections/steps";
@@ -12,6 +13,7 @@ const Home = () => {
       <Benefits />
       <Steps />
       <Testimonials />
+      <CTASection />
     </main>
   );
 };

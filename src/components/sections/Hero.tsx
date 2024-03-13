@@ -1,5 +1,5 @@
 import BulletPoints from "../elements/bullet-points";
-import CTA from "../ui/CTA";
+import CTA from "../ui/cta";
 import Container from "../layout/container";
 import Image from "next/image";
 

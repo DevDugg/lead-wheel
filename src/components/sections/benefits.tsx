@@ -1,5 +1,5 @@
 import BenefitWrapper from "../elements/benefit-wrapper";
-import CTA from "../ui/CTA";
+import CTA from "../ui/cta";
 import Container from "../layout/container";
 import Image from "next/image";
 import Title from "../elements/title";
