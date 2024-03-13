@@ -10,7 +10,6 @@ interface Props {
 
 const AnimatedParagraph = ({ text }: Props) => {
   const words = text.split(" ");
-
   const ref = useRef<HTMLHeadingElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -18,7 +17,7 @@ const AnimatedParagraph = ({ text }: Props) => {
     offset: ["start 0.8", "start 0.1"],
   });
   return (
-    <h2 ref={ref} className="text-[40px] font-medium leading-NORMAL flex flex-wrap">
+    <h2 ref={ref} className="text-TITLE font-medium leading-NORMAL flex flex-wrap">
       {words.map((word, index) => {
         const start = index / words.length;
         const end = start + 1 / words.length;

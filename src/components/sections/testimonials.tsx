@@ -20,7 +20,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
       <Container className="flex flex-col gap-12">
-        <h2 className="text-gradient font-medium leading-LOW text-[40px] bg-GRADIENT_BLUE text-center">
+        <h2 className="text-gradient font-medium leading-LOW text-TITLE bg-GRADIENT_BLUE text-center">
           What other clients say about us
         </h2>
         <div className="grid grid-cols-3 gap-2">

@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        TITLE: "40px",
+      },
       backgroundImage: {
         GRADIENT_BLUE: "linear-gradient(180deg, rgba(249,250,251,1) 0%, rgba(142,162,187,1) 100%)",
       },
