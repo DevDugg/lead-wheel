@@ -1,4 +1,4 @@
-import CTA from "../ui/cta";
+import CTA from "../elements/cta";
 import Container from "../layout/container";
 
 const CTASection = () => {

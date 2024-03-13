@@ -1,5 +1,5 @@
 import BenefitWrapper from "../elements/benefit-wrapper";
-import CTA from "../ui/cta";
+import CTA from "../elements/cta";
 import Container from "../layout/container";
 import Image from "next/image";
 import Title from "../elements/title";
@@ -38,7 +38,7 @@ const Benefits = () => {
                   alt="Google"
                   width={300}
                   height={300}
-                  className="absolute -bottom-[110px] left-[50%] -translate-x-[50%] drop-shadow-BENEFIT"
+                  className="absolute -bottom-[90px] left-[50%] -translate-x-[50%] drop-shadow-BENEFIT"
                 />
                 <div className="flex items-center gap-2">
                   <Image src={"/icons/star_sharp.svg"} alt="Star" width={24} height={24} />
@@ -59,7 +59,7 @@ const Benefits = () => {
                   alt="Facebook"
                   width={300}
                   height={300}
-                  className="absolute -bottom-[110px] left-[50%] -translate-x-[50%] drop-shadow-BENEFIT"
+                  className="absolute -bottom-[90px] left-[50%] -translate-x-[50%] drop-shadow-BENEFIT"
                 />
                 <div className="flex items-center gap-2">
                   <Image src={"/icons/star_sharp.svg"} alt="Star" width={24} height={24} />
