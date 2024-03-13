@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dm.className} text-WHITE bg-BLACK`}>
         <Provider>
+          <Logo />
           <AnimatedFadeIn>
-            <Logo />
             {children}
             <Footer />
           </AnimatedFadeIn>
