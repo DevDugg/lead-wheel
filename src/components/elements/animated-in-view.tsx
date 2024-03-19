@@ -1,15 +1,23 @@
-import { Variants, motion } from "framer-motion";
+"use client";
 
-import { PropsWithChildren } from "react";
+import { AnimationProps, TargetAndTransition, VariantLabels, motion } from "framer-motion";
+import { PropsWithChildren, useRef } from "react";
+
+import { useInView } from "react-intersection-observer";
 
 interface Props extends PropsWithChildren {
-  initial: Variants;
-  inView: Variants;
+  initialVariant: AnimationProps["initial"];
+  inViewVariant: VariantLabels | TargetAndTransition | undefined;
+  threshold?: number;
 }
 
-const AnimatedInView = ({ children, inView, initial }: Props) => {
+const AnimatedInView = ({ children, inViewVariant, initialVariant, threshold = 0.1 }: Props) => {
+  const { ref, inView } = useInView({
+    threshold: threshold,
+    triggerOnce: true,
+  });
   return (
-    <motion.div initial={initial} whileInView={inView}>
+    <motion.div ref={ref} initial={initialVariant} animate={inView ? inViewVariant : {}}>
       {children}
     </motion.div>
   );
