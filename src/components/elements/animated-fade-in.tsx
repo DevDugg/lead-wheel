@@ -1,11 +1,12 @@
 "use client";
 
 import { PropsWithChildren } from "react";
+import logonAnimation from "@/config/logon-animation";
 import { motion } from "framer-motion";
 import transition from "@/config/transition";
 
 const AnimatedFadeIn = ({ children }: PropsWithChildren) => {
-  return (
+  return logonAnimation ? (
     <>
       <motion.div initial={{ opacity: 0.2 }} animate={{ opacity: 1 }} transition={{ ...transition, delay: 2 }}>
         {children}
@@ -21,6 +22,8 @@ const AnimatedFadeIn = ({ children }: PropsWithChildren) => {
         }}
       ></motion.div>
     </>
+  ) : (
+    children
   );
 };
 export default AnimatedFadeIn;

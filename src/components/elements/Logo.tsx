@@ -1,10 +1,11 @@
 "use client";
 
+import logonAnimation from "@/config/logon-animation";
 import { motion } from "framer-motion";
 import transition from "@/config/transition";
 
 const Logo = () => {
-  return (
+  return logonAnimation ? (
     <motion.div
       className="logo fixed top-6 left-[50%] -translate-x-[50%] font-bold text-lg mix-blend-difference z-50"
       transition={{ ...transition, delay: 2, duration: 1 }}
@@ -18,6 +19,10 @@ const Logo = () => {
         Marketing
       </motion.span>
     </motion.div>
+  ) : (
+    <div className="logo fixed top-6 left-[50%] -translate-x-[50%] font-bold text-lg mix-blend-difference z-50">
+      <span>Mythical</span> <span>Marketing</span>
+    </div>
   );
 };
 export default Logo;
