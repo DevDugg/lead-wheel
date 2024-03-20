@@ -14,11 +14,11 @@ const Benefits = () => {
           <div className="grid grid-cols-BENEFITS gap-2">
             <AnimatedInView
               initialVariant={{
-                opacity: "20%",
+                opacity: 0.2,
                 y: "5%",
               }}
               inViewVariant={{
-                opacity: "100%",
+                opacity: 1,
                 y: "0%",
               }}
               threshold={0.3}
@@ -46,11 +46,11 @@ const Benefits = () => {
             </AnimatedInView>
             <AnimatedInView
               initialVariant={{
-                opacity: "20%",
+                opacity: 0.2,
                 y: "5%",
               }}
               inViewVariant={{
-                opacity: "100%",
+                opacity: 1,
                 y: "0%",
               }}
               threshold={0.8}
@@ -79,11 +79,11 @@ const Benefits = () => {
           <div className="grid grid-cols-BENEFITS_REVERSE gap-2">
             <AnimatedInView
               initialVariant={{
-                opacity: "20%",
+                opacity: 0.2,
                 y: "5%",
               }}
               inViewVariant={{
-                opacity: "100%",
+                opacity: 1,
                 y: "0%",
               }}
               threshold={0.8}
@@ -110,11 +110,11 @@ const Benefits = () => {
             </AnimatedInView>
             <AnimatedInView
               initialVariant={{
-                opacity: "20%",
+                opacity: 0.2,
                 y: "5%",
               }}
               inViewVariant={{
-                opacity: "100%",
+                opacity: 1,
                 y: "0%",
               }}
               threshold={0.3}

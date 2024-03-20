@@ -1,3 +1,4 @@
+import AnimatedInView from "../elements/animated-in-view";
 import Container from "../layout/container";
 import Step from "../elements/step";
 import Title from "../elements/title";
@@ -25,10 +26,19 @@ const Steps = () => {
   return (
     <section className="steps" id="steps">
       <Container className="flex flex-col gap-12">
-        <Title value="Our Unique Approach" />
+        <AnimatedInView initialVariant={{ y: 50, opacity: 0.2 }} inViewVariant={{ y: 0, opacity: 1 }} threshold={0.4}>
+          <Title value="Our Unique Approach" />
+        </AnimatedInView>
         <ul className="border-t border-GRAY flex flex-col">
           {steps.map((step, index) => (
-            <Step key={index} index={index + 1} title={step.title} description={step.description} />
+            <AnimatedInView
+              key={index}
+              initialVariant={{ y: 50, opacity: 0.2 }}
+              inViewVariant={{ y: 0, opacity: 1 }}
+              threshold={0.4}
+            >
+              <Step index={index + 1} title={step.title} description={step.description} />
+            </AnimatedInView>
           ))}
         </ul>
       </Container>

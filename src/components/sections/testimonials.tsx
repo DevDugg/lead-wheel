@@ -1,3 +1,4 @@
+import AnimatedInView from "../elements/animated-in-view";
 import Container from "../layout/container";
 import Testimonial from "../elements/testimonial";
 import Title from "../elements/title";
@@ -21,10 +22,19 @@ const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
       <Container className="flex flex-col gap-12">
-        <Title value="What other clients say about us" centered />
+        <AnimatedInView threshold={0.4} initialVariant={{ y: 50, opacity: 0.2 }} inViewVariant={{ y: 0, opacity: 1 }}>
+          <Title value="What other clients say about us" centered />
+        </AnimatedInView>
         <div className="grid grid-cols-3 gap-2">
           {testimonials.map((testimonial, index) => (
-            <Testimonial {...testimonial} key={index} />
+            <AnimatedInView
+              key={index}
+              threshold={(index + 4) / 10}
+              initialVariant={{ y: 50, opacity: 0.2 }}
+              inViewVariant={{ y: 0, opacity: 1 }}
+            >
+              <Testimonial {...testimonial} />
+            </AnimatedInView>
           ))}
         </div>
       </Container>
