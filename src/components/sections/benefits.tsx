@@ -9,7 +9,9 @@ const Benefits = () => {
   return (
     <section className="benefits" id="benefits">
       <Container className="flex flex-col gap-12">
-        <Title value="Who Benefits from Lead Wheel?" centered />
+        <AnimatedInView threshold={0.4} initialVariant={{ y: 50, opacity: 0.2 }} inViewVariant={{ y: 0, opacity: 1 }}>
+          <Title value="Who Benefits from Lead Wheel?" centered />
+        </AnimatedInView>
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-BENEFITS gap-2">
             <AnimatedInView
