@@ -9,7 +9,7 @@ const Benefits = () => {
   return (
     <section className="benefits" id="benefits">
       <Container className="flex flex-col gap-12">
-        <Title value="Who Benefits from Mythical Marketing?" centered />
+        <Title value="Who Benefits from Lead Wheel?" centered />
         <div className="flex flex-col gap-2">
           <div className="grid grid-cols-BENEFITS gap-2">
             <AnimatedInView
@@ -37,8 +37,8 @@ const Benefits = () => {
                     <h3 className="font-bold text-2xl leading-LOW">CRO Agencies</h3>
                   </div>
                   <p className="text-base text-GRAY">
-                    Optimize your conversion rates and watch your revenue soar. Mythical Marketing specializes in
-                    strategies tailored for Conversion Rate Optimization agencies.
+                    Optimize your conversion rates and watch your revenue soar. Lead Wheel specializes in strategies
+                    tailored for Conversion Rate Optimization agencies.
                   </p>
                 </div>
                 <span className="font-bold leading-LOW text-[200px] drop-shadow-BENEFIT">10X</span>
@@ -70,7 +70,7 @@ const Benefits = () => {
                   </div>
                   <p className="text-base text-GRAY">
                     Leverage the power of Google Ads with our data-driven approaches. Unleash the full potential of your
-                    Google AD agency with Mythical Marketing.
+                    Google AD agency with Lead Wheel.
                   </p>
                 </div>
               </BenefitWrapper>

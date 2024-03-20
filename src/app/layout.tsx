@@ -10,8 +10,8 @@ import Provider from "@/components/layout/provider";
 const dm = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mythical Marketing",
-  description: "Mythical Marketing",
+  title: "Lead Wheel",
+  description: "Lead Wheel",
 };
 
 export default function RootLayout({

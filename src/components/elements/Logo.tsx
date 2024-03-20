@@ -13,15 +13,15 @@ const Logo = () => {
       animate={{ top: "24px" }}
     >
       <motion.span transition={{ ...transition, delay: 0.5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        Mythical
+        Lead
       </motion.span>{" "}
       <motion.span transition={{ ...transition, delay: 1 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        Marketing
+        Wheel
       </motion.span>
     </motion.div>
   ) : (
     <div className="logo fixed top-6 left-[50%] -translate-x-[50%] font-bold text-lg mix-blend-difference z-50">
-      <span>Mythical</span> <span>Marketing</span>
+      <span>Lead</span> <span>Wheel</span>
     </div>
   );
 };

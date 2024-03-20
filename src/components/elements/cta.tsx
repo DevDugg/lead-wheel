@@ -12,7 +12,7 @@ const CTA = ({ href, name }: Props) => {
     <a
       href={href}
       rel="noreferrer noopener"
-      className="flex gap-10 items-center px-6 py-[10px] rounded-3xl bg-GRADIENT_BLUE w-fit relative overflow-hidden"
+      className="flex gap-10 items-center px-6 py-[10px] rounded-3xl bg-WHITE w-fit relative overflow-hidden"
     >
       <div className="absolute top-0 left-0 h-[1px] w-[1px] bg-BLACK rounded-full z-10" />
       <span className="leading-LOW text-BLACK font-medium z-20">{name}</span>

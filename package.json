@@ -1,6 +1,6 @@
 {
-  "name": "mythical-marketing",
-  "version": "0.1.0",
+  "name": "lead-wheel",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

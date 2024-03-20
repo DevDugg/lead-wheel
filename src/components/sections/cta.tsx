@@ -13,7 +13,7 @@ const CTASection = () => {
           <h3 className="font-medium text-lg leading-LOW">Digital Transformation Tailored to Your Business Needs.</h3>
           <p className="text-base text-GRAY">
             {
-              "At Mythical Marketing, we understand the unique challenges of advertising and conversion rate optimization agencies. We listen to your specific needs, identify the most effective approach, and craft a personalized strategy to elevate your agency's success."
+              "At Lead Wheel, we understand the unique challenges of advertising and conversion rate optimization agencies. We listen to your specific needs, identify the most effective approach, and craft a personalized strategy to elevate your agency's success."
             }
           </p>
         </div>

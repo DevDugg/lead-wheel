@@ -4,3 +4,5 @@ const colors = {
   WHITE: "#F5F5F5",
   GRAY: "#5D5D5D",
 };
+
+export default colors;
